@@ -85,8 +85,12 @@ WSGI_APPLICATION = 'api_webchibcha.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'chibchawebapi',
+        "USER": "Andres", #Esto deben modificarlo de acuerdo a su db
+        "PASSWORD": "SQLPassword", #Esto deben modificarlo de acuerdo a su db
+        "HOST": "127.0.0.1",
+        "PORT": "3306",
     }
 }
 

@@ -1,6 +1,5 @@
 from django.urls import path, include
 from rest_framework import routers
-from .views import InicioDistribuidoresView, SolicitudDistribuidorView, PerfilDistribuidorView, ListarRecibosCobroView, DetalleReciboCobroView, PagoReciboCobroView
 from .api import DistribuidoresApiView, PagoComisionesApiView
 
 app_name = 'distribuidores' # Nombre de la aplicación, que sera llamada en otros archivos
